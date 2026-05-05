@@ -1,0 +1,43 @@
+Act as an Expert Frontend Developer. I want you to build a responsive, modern, and high-performance landing page using HTML5 and Tailwind CSS. The design must strictly follow a "TEDx" style theme. 
+
+Here are the strict design guidelines:
+- Color Palette: Primary Black (#000000 or very dark grey), Primary Red (TED Red, #E62B1E), White (#FFFFFF), and Light Grey for paragraph text.
+- Typography: Use a clean, modern, and bold sans-serif font (like Inter, Roboto, or Helvetica Neue). Headings should be very bold and tightly tracked.
+
+Please build the website with the following sections sequentially:
+
+1. Navigation Bar (Top):
+- Dark background (#000000).
+- Left side: Logo text "TEDxTheHague" (Make 'TEDx' bold and red, 'TheHague' white).
+- Right side: Navigation links (Home, Events, Partners, Team, Speakers, Newsletter) in white, small sans-serif font.
+- Layout: Flexbox, space-between, vertically aligned center.
+
+2. Hero Section:
+- Background: Black.
+- Visual Element: A striking red brush-stroke or diagonal slash shape acting as a background accent behind the text on the left.
+- Left Content: Huge, bold heading "IDEAS CHANGE EVERYTHING." (Make "IDEAS CHANGE" white, and "EVERYTHING." red). Below it, add a grey paragraph text about gathering to celebrate bold ideas.
+- Right Content: A placeholder for a hero image (a speaker on stage with a red carpet). Use a dark placeholder image for now.
+- Layout: 2-column CSS Grid or Flexbox on desktop, stacking on mobile.
+
+3. "Call for Speakers" Section:
+- Background: Use a dark, slightly transparent overlay over an image of an audience.
+- Content: Left-aligned. Small white text "Call for Speakers 2026". Below it, huge text "SHARE YOUR IDEA." (Make "SHARE YOUR" white, "IDEA." red). Followed by a short white descriptive paragraph.
+
+4. "What We're Looking For" Section:
+- Background: Very dark grey/black.
+- Heading: Centered. "WHAT WE'RE" (White) and "LOOKING FOR" (Red) underneath. Add a small grey subtext below.
+- Cards Layout: A 3-column grid containing 3 dark grey cards.
+- Card Design: Each card must have a solid dark grey background, a small red accent line (border-top) at the top, a bold white title ("BOLD IDEAS", "POWERFUL STORYTELLING", "Diverse Perspectives"), and small grey description text.
+
+5. "How to Apply" Section:
+- Background: Clean White.
+- Heading: Centered black text "HOW TO APPLY", with "APPLY" in red. Add a small black underline beneath "HOW TO".
+- Steps Layout: A 4-column grid for the steps.
+- Step Design: Each step should have a huge, bold red number ("01", "02", "03", "04"), followed by a bold black title ("Fill the Form", etc.), and a small grey description text centered below it.
+
+6. Final Call-to-Action (CTA) Section:
+- Background: Solid bright Red (#E62B1E).
+- Content: Centered. Huge bold white heading "READY TO INSPIRE?". Below it, a white paragraph "Applications are open until May 1, 2026...".
+- Button: A solid black button with white text "Apply as Speaker ->". Add a hover effect that slightly lightens the black or scales the button.
+
+Ensure the entire page is fully responsive (mobile-first approach). Use semantic HTML tags (<header>, <section>, <main>, <footer>). Do not write any external CSS files, use Tailwind utility classes directly in the HTML.
