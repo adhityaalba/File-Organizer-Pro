@@ -82,7 +82,7 @@ export default function Landing() {
                 <img 
                   src="https://i0.wp.com/tedxthehague.com/wp-content/uploads/2025/12/Screenshot-2025-12-18-at-09.54.23-e1766026728628.png?w=1392&ssl=1" 
                   alt="Speaker on TEDx stage" 
-                  className="w-full h-full object-cover object-center rounded-sm grayscale-[20%] contrast-125"
+                  className="w-full h-full object-contain object-center rounded-sm grayscale-[20%] contrast-125 bg-black"
                 />
               </motion.div>
             </div>
