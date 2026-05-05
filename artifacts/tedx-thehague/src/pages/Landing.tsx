@@ -37,7 +37,6 @@ export default function Landing() {
           </nav>
         </div>
       </header>
-
       <main>
         {/* 2. Hero Section */}
         <section className="relative min-h-[90vh] flex items-center pt-16 lg:pt-0 overflow-hidden">
@@ -81,7 +80,7 @@ export default function Landing() {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent z-10 lg:hidden" />
                 <img 
-                  src={heroImg} 
+                  src="https://i0.wp.com/tedxthehague.com/wp-content/uploads/2025/12/Screenshot-2025-12-18-at-09.54.23-e1766026728628.png?w=1392&ssl=1" 
                   alt="Speaker on TEDx stage" 
                   className="w-full h-full object-cover object-center rounded-sm grayscale-[20%] contrast-125"
                 />
@@ -240,7 +239,6 @@ export default function Landing() {
           </div>
         </section>
       </main>
-
       {/* 7. Footer */}
       <footer className="bg-black py-12 border-t border-white/10">
         <div className="container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
