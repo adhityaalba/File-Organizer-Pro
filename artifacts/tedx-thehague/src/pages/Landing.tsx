@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { useAuth } from "@workspace/replit-auth-web";
 import heroImg from "@assets/Screenshot_2026-05-06_at_00.49.16_1778003359155.png";
 import callImg from "@assets/image_1778003374031.png";
 
 export default function Landing() {
+  const { user, isLoading, isAuthenticated, login, logout } = useAuth();
+
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     visible: {
@@ -60,6 +63,37 @@ export default function Landing() {
               Newsletter
             </Link>
           </nav>
+          <div className="flex items-center gap-3">
+            {!isLoading && (
+              isAuthenticated ? (
+                <div className="flex items-center gap-3">
+                  {user?.profileImageUrl && (
+                    <img
+                      src={user.profileImageUrl}
+                      alt="Profile"
+                      className="w-8 h-8 rounded-full object-cover border border-white/20"
+                    />
+                  )}
+                  <span className="hidden sm:block text-sm text-white/70 font-medium">
+                    {user?.firstName ?? user?.email ?? "Account"}
+                  </span>
+                  <button
+                    onClick={logout}
+                    className="text-sm font-bold text-white/70 hover:text-white border border-white/20 hover:border-white/50 px-4 py-1.5 rounded transition-all"
+                  >
+                    Log out
+                  </button>
+                </div>
+              ) : (
+                <button
+                  onClick={login}
+                  className="text-sm font-bold bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded transition-all hover:scale-105 active:scale-95"
+                >
+                  Log in
+                </button>
+              )
+            )}
+          </div>
         </div>
       </header>
       <main>
